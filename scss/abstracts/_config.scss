@@ -1,0 +1,50 @@
+@use 'colors'  as *;
+$ff-headers: 'Tauri', sans-serif;
+$ff-body: 'Open Sans', sans-serif;
+$ff-date: 'Sintony', cursive;
+
+
+$fs-lg: 2.62rem; /*  48px */
+$fs-md: 2.2rem; /*  30px */
+$fs-sm: 1.5rem; /*  24px */
+$fs-xs: 1.2rem; /* 18px */
+
+$s-icon: 10px;
+
+$lg-grid: .1fr minmax(90px, 120px) .8fr .1fr;
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: $clr-bg;
+    font-family: $ff-headers;
+    display: grid;
+    grid-template-columns: $lg-grid;
+    grid-template-rows: 5vh minmax(auto, 1900px) 5vh;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+section {
+    grid-column: 3;
+    grid-row: 2 / -2;
+    background-color: $clr-white;
+    padding: 2.5rem;
+    border-radius: 0 20px 20px 0;
+}
